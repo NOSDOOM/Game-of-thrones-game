@@ -1,0 +1,983 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@font-face {
+    font-family: GameOfThrones;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/29725/got.ttf);
+}
+table, tr, td, th, tbody, thead {
+  vertical-align:top
+}
+
+#fixme{
+  height:100%
+}
+body, html{
+  height:100%;
+  margin:0px;
+  padding:0px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width:100%;
+    height:99.6%;
+    font-family:'GameOfThrones';
+}
+
+td, th {
+    border: 4px solid #000000;
+    text-align: center;
+    padding:0px;
+  
+}
+
+#start{
+  background-color:#363636;
+  color:#ffffff;
+  vertical-align: middle;
+}
+
+#finish{
+  background-color:#363636;
+  color:#ffffff;
+  font-size: 1.5vh;
+  vertical-align: middle;
+}
+
+#game{
+  background-color:#363636;
+  color:#ffffff;
+  font-size:6vh;
+  vertical-align: middle;
+  z-index:-1;
+}
+
+#of{
+  background-color:#363636;
+  color:#ffffff;
+  font-size:6vh;
+  vertical-align: middle;
+  z-index:-1;
+}
+
+#thrones{
+  background-color:#363636;
+  color:#ffffff;
+  font-size:6vh;
+  vertical-align: middle;
+  z-index:-1;
+}
+
+#ned {
+  font-size:0.8vh;
+}
+#meli {
+  font-size:0.8vh;
+}
+
+#snow {
+  font-size:0.8vh;
+}
+
+#varys {
+  font-size:0.8vh;
+}
+
+#redwed {
+  font-size:0.8vh;
+}
+
+#knee {
+  font-size:0.8vh;
+}
+
+#kotn {
+  font-size:0.8vh;
+}
+
+#little {
+  font-size:0.8vh;
+}
+
+#loser {
+  font-size:0.8vh;
+}
+
+#onion {
+  font-size:0.8vh;
+}
+
+#queen {
+  font-size:0.8vh;
+}
+
+#dinklage {
+  font-size:0.8vh;
+}
+
+#valar {
+  font-size:0.8vh;
+}
+
+#water {
+  font-size:0.8vh;
+  z-index: 1;
+}
+
+#sadist {
+  font-size:0.8vh;
+}
+
+#kingslayer {
+  font-size:0.8vh;
+}
+
+#dick {
+  font-size:0.8vh;
+}
+
+#hodor {
+  font-size:0.8vh;
+}
+
+#reek {
+  font-size:0.8vh;
+}
+
+#sullied {
+  font-size:0.8vh;
+}
+
+#mercy {
+  font-size:0.8vh;
+}
+
+#horn {
+  font-size:0.8vh;
+}
+
+#outsider {
+  font-size:0.8vh;
+}
+
+#ygritte {
+  font-size:0.8vh;
+}
+
+#dragons {
+  font-size:0.8vh;
+}
+
+#shame {
+  font-size:0.8vh;
+}
+
+#names {
+  font-size:0.8vh;
+}
+
+#fire {
+  font-size:0.8vh;
+}
+
+#dothraki {
+  font-size:0.8vh;
+}
+
+#stone {
+  font-size:0.8vh;
+}
+
+tr img{
+  width:100%;
+  height:25%;
+  overflow:none;
+}
+
+#container {
+  position:relative;
+}
+.box {
+  position: absolute;
+  width: 4.5%;
+  height: auto;
+	padding-bottom: 4.5%;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid black;
+  z-index:100000;
+}
+#box1 {
+  background-image: url("https://raw.githubusercontent.com/NOSDOOM/GoT-proj/master/targ.png");
+	background-size: cover;
+  position: fixed;
+  top: 53%;
+  left: 43%;
+}
+
+#box2 {
+  background-image: url("https://raw.githubusercontent.com/NOSDOOM/GoT-proj/master/strk.png");
+	background-size: cover;
+  position: fixed; /* or absolute */
+  top: 53%;
+  left: 49%;
+}
+
+#box3 {
+  background-image: url("https://raw.githubusercontent.com/NOSDOOM/GoT-proj/master/lann.png");
+	background-size: cover;
+  position: fixed; /* or absolute */
+  top: 53%;
+  left: 55%;
+}
+
+#box4 {
+  background-image: url("https://raw.githubusercontent.com/NOSDOOM/GoT-proj/master/gj.png");
+	background-size: cover;
+  position: fixed; /* or absolute */
+  top: 43%;
+  left: 43%;
+}
+
+#box5 {
+  background-image: url("https://raw.githubusercontent.com/NOSDOOM/GoT-proj/master/brthn.png");
+	background-size: cover;
+  position: fixed; /* or absolute */
+  top: 43%;
+  left: 49%;
+}
+
+#box6 {
+  background-image: url("https://raw.githubusercontent.com/NOSDOOM/GoT-proj/master/tyrl.png");
+	background-size: cover;
+  position: fixed; /* or absolute */
+  top: 43%;
+  left: 55%;
+}
+.highlight {
+  border: 4px solid orangered;
+  width: 4.5%;
+  height: auto;
+	padding-bottom: 4.5%;
+}
+code {
+  color: white;
+  font-size:1.2em;
+}
+p {
+  margin-top: 8px;
+}
+
+.dice {
+  position: absolute;
+  width: 4.5%;
+  height: auto;
+	padding-bottom: 4.5%;
+  text-align: center;
+  color: white;
+  top: 43%;
+  left:60%;
+  border: 2px solid black;
+  z-index:10000;
+}
+
+.dice:active {
+  background: #333;
+}
+
+.dice:active .dot {
+  border-color: white;
+}
+
+.side {
+  background-color: #363636;
+  position: absolute;
+  height:auto;
+  padding-bottom:100%;
+  width:100%;
+	background-size: cover;
+}
+
+
+.side:first-child {
+  margin-top: -00px;
+  transition: 2s;
+}
+
+.dot {
+  border: 3px solid #333;
+  border-radius: 50%;
+  height: auto;
+	padding-bottom:15%;
+  margin-top: -12%;
+  margin-left: -12%;
+  position: absolute;
+  width: 15%;
+}
+
+.dot.c {
+  background-color: #68fc00;
+  top: 50%;
+  left: 50%;
+}
+
+.dot.tl {
+  background-color: #68fc00;
+  top: 20%;
+  left: 20%;
+}
+
+.dot.tr {
+  background-color: #68fc00;
+
+  top: 20%;
+  right: 4%;
+}
+
+.dot.cl {
+  background-color: #68fc00;
+  top: 50%;
+  left: 20%;
+}
+
+.dot.cr {
+  background-color: #68fc00;
+  top: 50%;
+  right: 4%;
+}
+
+.dot.bl {
+  background-color: #68fc00;
+  margin-bottom: -9px;
+  left: 20%;
+  bottom: 25%;
+}
+
+.dot.br {
+  background-color: #68fc00;
+  margin-bottom: -9px;
+  right: 4%;
+  bottom: 25%;
+}
+
+#start {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#start:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#ned {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#ned:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#loser {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#loser:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#valar {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#valar:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#dick {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#dick:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#mercy {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#mercy:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#shame {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#shame:after {
+content: '';
+display: block;
+position: absolute;
+top: 100%;
+left: 50%;
+width: 0;
+height: 0;
+border-color: #81b71a transparent transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#names {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#names:after {
+content: '';
+display: block;
+position: absolute;
+top: 100%;
+left: 50%;
+width: 0;
+height: 0;
+border-color: #81b71a transparent transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#fire {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#fire:after {
+content: '';
+display: block;
+position: absolute;
+top: 100%;
+left: 50%;
+width: 0;
+height: 0;
+border-color: #81b71a transparent transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#dothraki {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#dothraki:after {
+content: '';
+display: block;
+position: absolute;
+top: 100%;
+left: 50%;
+width: 0;
+height: 0;
+border-color: #81b71a transparent transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#stone {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#stone:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#dragons {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#dragons:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#sullied {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#sullied:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#kingslayer {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#kingslayer:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#dinklage {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#dinklage:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#varys {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#varys:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#little {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#little:after {
+content: '';
+display: block;
+position: absolute;
+bottom: 100%;
+left: 40%;
+width: 0;
+height: 0;
+border-color: transparent transparent #81b71a transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#kotn {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#kotn:after {
+content: '';
+display: block;
+position: absolute;
+bottom: 100%;
+left: 40%;
+width: 0;
+height: 0;
+border-color: transparent transparent #81b71a transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#knee {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#knee:after {
+content: '';
+display: block;
+position: absolute;
+bottom: 100%;
+left: 40%;
+width: 0;
+height: 0;
+border-color: transparent transparent #81b71a transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#redwed {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#redwed:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#meli {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#meli:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#onion {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#onion:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:10;
+}
+
+#water {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#water:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#hodor {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#hodor:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+left: 100%;
+width: 0;
+height: 0;
+border-color: transparent transparent transparent #81b71a;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#horn {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#horn:after {
+content: '';
+display: block;
+position: absolute;
+top: 100%;
+left: 50%;
+width: 0;
+height: 0;
+border-color: #81b71a transparent transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#outsider {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#outsider:after {
+content: '';
+display: block;
+position: absolute;
+top: 100%;
+left: 50%;
+width: 0;
+height: 0;
+border-color: #81b71a transparent transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#ygritte {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#ygritte:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#reek {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#reek:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#sadist {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#sadist:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#queen {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#queen:after {
+content: '';
+display: block;
+position: absolute;
+top: 30%;
+right: 100%;
+width: 0;
+height: 0;
+border-color: transparent #81b71a transparent transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
+
+#snow {
+    margin-left: 15px;
+    border: 4px solid #000000;
+    position: relative;
+}
+
+#snow:after {
+content: '';
+display: block;
+position: absolute;
+bottom: 100%;
+left: 40%;
+width: 0;
+height: 0;
+border-color: transparent transparent #81b71a transparent;
+border-style: solid;
+border-width: 20px;
+z-index:1;
+}
